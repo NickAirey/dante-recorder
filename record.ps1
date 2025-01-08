@@ -59,7 +59,7 @@ function Remove-Old-Files {
     
     Write-Host "Removing files older than $ageInDays days"
   
-    Get-ChildItem $basePath -Recurse -File | Where-Object CreationTime -lt (Get-Date).AddDays(-1 * $ageInDays) #| Remove-Item -Force
+    Get-ChildItem $basePath -Recurse -File | Where-Object CreationTime -lt (Get-Date).AddDays(-1 * $ageInDays) | Remove-Item -Force
 }
 
 
