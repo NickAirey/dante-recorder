@@ -64,7 +64,7 @@ function Remove-Old-Files {
 
 
 
-$basePath = "C:/Users/dante-recorder/Documents/recordings"
+$basePath = "C:/Users/dante-recorder/recordings"
 
 Write-Host "Script starting with base path $basePath"
 
