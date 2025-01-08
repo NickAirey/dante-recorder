@@ -48,7 +48,7 @@ function Sync-to-S3 {
 
     Write-Host "Syncing files to S3 bucket $bucketName"
 
-    aws s3 sync --dryrun $basePath $bucketName 
+    aws s3 sync $basePath $bucketName 
 }
 
 function Remove-Old-Files {
